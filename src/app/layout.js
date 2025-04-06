@@ -19,10 +19,53 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+{/* On this page, the default header and footer will be constant throughout every sub-page and the {children}
+    section will change according to the content of that specific page */}
+
+
+        <header>
+          <div className="logo">
+            <a href="/"><img src="./picture/dz.png" alt="RD as Dzeinse Enterprise for the logo" className="logo-img"/></a>
+          </div>
+          <nav className="navigation">
+            <ul>
+              <li><a href="/" className="sub-sections">Home</a></li>
+              <li><a href="/projects" className="sub-sections">Projects</a></li>
+              <li><a href="/quotegen" className="sub-sections">Quote Generator</a></li>
+              <li><a href="/insights" className="sub-sections">Insights</a></li>
+            </ul>
+          </nav>
+        </header>
+      
+        <main>
+          {children}
+        </main>
+
+        <footer>
+          <div className="footer-content">
+
+            <div className="far-left">
+              <a href="/"><img src="./picture/dz.png" alt="RD as Dzeinse Enterprise for the logo" className="logo-img"/></a>
+            </div>
+
+            <div className="leftside">
+              <p>Explore</p>
+              <div className="footer-links">
+                <li><a href="/" className="">Home</a></li>
+                <li><a href="/projects" className="">Projects</a></li>
+                <li><a href="/quotegen" className="">Quote Generator</a></li>
+                <li><a href="/insights" className="">Insights</a></li>
+              </div>
+            </div>
+
+            <div className="rightside">
+              <p id="firstp-tag">Thank you for visiting</p>
+              <p>© 2025 Romain Dzeinse. All rights reserved.</p>
+            </div>
+          </div>
+        </footer>
+
       </body>
     </html>
   );

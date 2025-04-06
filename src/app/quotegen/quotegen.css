@@ -1,0 +1,27 @@
+:root{
+    --white: #fff;
+    --cool-black: #0f0f0f;
+    --black: #000;
+    --dark-blue: #134187;
+    --light-blue: #92a8d1;
+    --coral: #f7786b;
+    --light-pink: #f7cac9;
+  }
+h1,
+h2,
+h3 {
+    color: var(--dark-blue); /* Dark Blue */
+  }
+
+.quoteGen-container{
+    background-color: var(--white);
+    color: var(--cool-black);
+    padding: 0;
+    margin: 0;
+}
+.section1 {
+    padding: 20px;
+    margin: 20px 0;
+  }
+
+

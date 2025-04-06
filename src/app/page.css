@@ -1,0 +1,99 @@
+:root{
+  --white: #fff;
+  --cool-black: #0f0f0f;
+  --black: #000;
+  --dark-blue: #134187;
+  --light-blue: #92a8d1;
+  --coral: #f7786b;
+  --light-pink: #f7cac9;
+}
+
+
+#home-container {
+  background-color: var(--cool-black);
+  padding: 0;
+  margin: 0;
+}
+
+#home-container h3 {
+  color: var(--dark-blue);
+}
+
+#home-container p {
+  font-size: 1.2rem;
+  color: var(--dark-blue);
+}
+.section {
+  padding: 20px;
+  margin: 20px 0;
+}
+h1,
+h2,
+h3 {
+  color: var(--dark-blue); /* Dark Blue */
+}
+
+#welcome, #about, #contact{
+  background-color: var(--light-blue); /* Light blue */
+}
+
+
+/* Divider styles */
+hr {
+  background-color: var(--light-blue);
+  width: 90%;
+  height: 1px;
+}
+/* Button styles */
+.cta-button {
+  background-color: var(--coral); /* Coral */
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: var(--dark-blue); /* Dark Blue */
+}
+
+
+/* WELCOME SECTION */
+#welcome {
+  padding: 20px;
+  /* border: 7px dotted var(--white); */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-content {
+  display: flex;
+  align-items: center;
+  gap: 100px; /* Adjust the space between the image and text */
+}
+
+.welcome-img {
+  width: 170px; /* Set the size of the image */
+  height: auto;
+  border-radius: 10%; /* Make it circular if you want */
+}
+
+.welcome-text {
+  max-width: 500px; /* Set the maximum width for the text */
+  /* border: 2px solid var(--cool-black); */
+}
+
+.welcome-text h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.welcome-text p {
+  font-size: 1.2rem;
+}
+
+
+

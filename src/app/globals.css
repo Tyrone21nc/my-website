@@ -1,8 +1,15 @@
-@import "tailwindcss";
+/* THIS PAGE CONTAINS CSS that applies to all other pages */
+
+
+/*DEFAULT TAILWIND CSS CODE STARTS HERE*/
+/* @import "tailwindcss";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-color: #4f46e5;
+  --secondary-color: #f97316;
+  --font-main: 'Inter', sans-serif;
 }
 
 @theme inline {
@@ -17,10 +24,133 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+} */
+/*DEFAULT TAILWIND CSS CODE ENDS HERE*/
+
+:root{
+  --bg-color: #171717;
+  --black: #000000;
+  --bg2: #134;
+  --text-color: #ffffff;
+  --cool-blue: #134187;
+  --light-pink: #f7cac9;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background-color: var(--bg-color);
+  color: var(--text-color);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+
+/* HEADER STARTS */
+header {
+  background-color: var(--cool-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-weight: bold;
+}
+header img{
+  height: 200px;
+  width: auto;
+  border-radius: 2%;
+  padding-left: 50px;
+}
+.logo-img{
+  cursor: pointer;
+}
+.navigation ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.navigation ul li {
+  font-size: 2rem;
+}
+
+.navigation ul li a {
+  color: var(--black);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sub-sections:hover {
+  color: var(--light-pink);
+}
+/* HEADER ENDS */
+
+
+
+/* FOOTER STARTS */
+footer {
+  background-image: linear-gradient(to left, #0f0f0f, #134187);
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+footer .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+.far-left img{
+  width: 150px;
+  height: auto;
+}
+
+.leftside{
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  width: 200px;
+  height: auto;
+  color: var(--text-color);
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.leftside p{
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.footer-links li{
+  padding-top: 5px;
+}
+.footer-links li a {
+  color: #92a8d1
+}
+.footer-links li a{
+  text-decoration: none;
+  font-size: 1.04em;
+}
+.footer-links li a:hover{
+  color: #f7cac9;
+}
+
+
+.rightside{
+  text-align: center;
+  align-items: center;
+  width: 400px;
+  height: auto;
+}
+.rightside p{
+  padding-top: 5px;
+}
+#firstp-tag{
+  padding-top: 45px;
+  font-weight: bold;
+}
+
+/* FOOTER ENDS */
