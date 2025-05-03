@@ -14,10 +14,9 @@ h3 {
   }
 
 .quoteGen-container{
-    background-color: var(--white);
-    color: var(--cool-black);
-    padding: 0;
-    margin: 0;
+  background-color: var(--cool-black);
+  padding: 0;
+  margin: 0;
 }
 .section1 {
     padding: 20px;

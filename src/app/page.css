@@ -30,23 +30,24 @@
 h1,
 h2,
 h3 {
-  color: var(--dark-blue); /* Dark Blue */
+  color: var(--dark-blue);
+}
+.title-heading{
+  color: var(--cool-black);
+  text-align: center;
+  font-size: 3em;
 }
 
 #welcome, #about, #contact{
-  background-color: var(--light-blue); /* Light blue */
+  background-color: var(--light-blue);
 }
-
-
-/* Divider styles */
-hr {
+hr{
   background-color: var(--light-blue);
   width: 90%;
   height: 1px;
 }
-/* Button styles */
 .cta-button {
-  background-color: var(--coral); /* Coral */
+  background-color: var(--coral);
   color: var(--white);
   border: none;
   padding: 10px 20px;
@@ -54,46 +55,165 @@ hr {
   font-size: 16px;
   border-radius: 5px;
 }
-
 .cta-button:hover {
-  background-color: var(--dark-blue); /* Dark Blue */
+  background-color: var(--dark-blue);
 }
 
 
 /* WELCOME SECTION */
 #welcome {
-  padding: 20px;
-  /* border: 7px dotted var(--white); */
+  padding: 10px;
   text-align: center;
-  display: flex;
-  justify-content: center;
 }
 
 .welcome-content {
   display: flex;
-  align-items: center;
-  gap: 100px; /* Adjust the space between the image and text */
+  justify-content: center;
+  gap: 100px;
+  padding-bottom: 10px;
 }
 
 .welcome-img {
-  width: 170px; /* Set the size of the image */
+  width: 200px;
   height: auto;
-  border-radius: 10%; /* Make it circular if you want */
+  border-radius: 10%;
+  border: 2px solid var(--cool-black);  
 }
 
 .welcome-text {
-  max-width: 500px; /* Set the maximum width for the text */
-  /* border: 2px solid var(--cool-black); */
+  max-width: 700px;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-top: 20px;
 }
-
-.welcome-text h3 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
 .welcome-text p {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  line-height: 30px;
+}
+/* ABOUT SECTION */
+.about-content{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.about-content div{
+  width: 25%;
+  border-bottom: 10px solid var(--coral);
+  padding-left: 10px;
+  line-height: 30px;
+}
+/* CONTACT SECTION */
+/* Style the contact section */
+.section {
+  padding: 3rem 1rem;
+  background-color: #f9f9f9;
+  text-align: center;
 }
 
+.title-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.section p {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+/* Form container */
+form {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  max-width: 500px;
+  /* margin: 0 auto; */
+}
+
+/* Inputs and textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1.2em;
+  transition: border-color 0.3s ease;
+  color: white;
+}
+.box::placeholder{
+  color: var(--light-blue);
+}
+.box{
+  font-size: 1.5em;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--dark-blue);
+  outline: none;
+}
+
+/* Submit button */
+.cta-button {
+  background-color: var(--coral);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  /* transition: background-color 0.3s ease; */
+}
+
+.cta-button:hover {
+  background-color: var(--dark-blue);
+}
+
+/* Optional: Success/Error message styles */
+.success-message {
+  color: green;
+  margin-top: 1rem;
+}
+
+.error-message {
+  color: red;
+  margin-top: 1rem;
+}
+
+.link-color{
+  color: var(--cool-black);
+  cursor: pointer;
+  text-decoration: none;
+}
+.link-color:hover{
+  /* color: var(--coral); */
+  text-decoration: underline;
+}
+.box{
+  background-image: linear-gradient(#134187, black);
+}
+.LI{
+  font-size: 5em;
+}
+.choices{
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid #f7786b;
+}
+.sub-titles{
+  display: flex;
+  justify-content: space-around;
+}
+#p1{
+  color: white;
+}
+.socials{
+  display: flex;
+  /* justify-content: space-around; */
+  /* border: 2px solid blue; */
+}
 
 

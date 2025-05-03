@@ -105,9 +105,13 @@ footer p {
   font-size: 1rem;
   margin: 0.5rem 0;
 }
+.far-left{
+  padding-top: 30px;
+}
 .far-left img{
   width: 150px;
   height: auto;
+  border-radius: 2px;
 }
 
 .leftside{
