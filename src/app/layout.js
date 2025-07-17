@@ -48,23 +48,39 @@ export default function Layout({ children }) {
           {children}
         </main>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <footer>
           <div className="footer-content">
 
-          <Link href="/">
-            <Image src="/picture/logo4.png" alt="RD as Dzeinse Enterprise for the logo" width={120} height={60} className="logo-img" />
-          </Link>
+            <Link href="/">
+              <Image src="/picture/logo4.png" alt="RD as Dzeinse Enterprise for the logo" width={50} height={50} className="logo-img footer-logo-img" />
+            </Link>
 
             <div className="leftside">
               <p>Explore</p>
               <div className="footer-links">
-              <ul>
-                <li><Link href="/" className="link-color">Home</Link></li>
-                <li><Link href="/projects" className="link-color">Projects</Link></li>
-                <li><Link href="/quotegen" className="link-color">Quote Generator</Link></li>
-                <li><Link href="/insights" className="link-color">Insights</Link></li>
-              </ul>
-
+                <ul>
+                  <li><Link href="/" className="link-color">Home</Link></li>
+                  <li><Link href="/projects" className="link-color">Projects</Link></li>
+                  <li><Link href="/quotegen" className="link-color">Quote Generator</Link></li>
+                  <li><Link href="/insights" className="link-color">Insights</Link></li>
+                </ul>
               </div>
             </div>
 
@@ -73,6 +89,7 @@ export default function Layout({ children }) {
               <p>© 2025 Romain Dzeinse. All rights reserved.</p>
             </div>
           </div>
+
         </footer>
 
       </body>
