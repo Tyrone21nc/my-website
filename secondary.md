@@ -7,5 +7,5 @@
 
 + I use Next.JS for the routing of the different pages.
 + When I click the send message button and you see the "message sent" message pop up, this information gets pushed into my MongoDB Atlas document on my local computer
-
+<hr>
 
